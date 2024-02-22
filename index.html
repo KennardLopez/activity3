@@ -3,22 +3,46 @@
 
 <head>
     <title>Login</title>
-    
+    <style>
+        #divContainer {
+            text-align: center;
+        } 
+        .redText {
+            color: rgb(22, 18, 207);
+            background-color: rgb(185, 189, 207);
+        }
+        .redText:hover {
+            color: gray;
+        }
+        #btnLogin {
+            font-size: large;
+            color: gold; 
+            cursor: pointer;
+           
+        }
+        #btnLogin:hover {
+            cursor: pointer;
+            font-size: x-large;
+            color: rgb(160, 138, 14);
+        }
+
+    </style>
 </head>
+
 <body>
-    <div style="text-align: center;">
+    <div style="text-align: center;" id="divContainer">
         <h1>Login</h1>
-        <input type="text" placeholder="Username" id="txtUsername">
-        <input type="text" placeholder="Password" id="txtPassword">
-        <div style="margin-top: 1rem;">
-            <button id="btnlogin" onclick="alert('Login successfully.')">Login</button>
+        <input type="text" placeholder="Username" class="redText">
+        <input type="text" placeholder="Password" class="redText">
+        <div style="margin-top: 1rem;"  class="btnLogin">
+            <button id="btnLogin" onclick="alert('Login successfully.')">Login</button>
         </div>
     </div>
 </body>
 <script>
     ///// JAVAAA SCRIPTTT
     cansole.log("Hello World")
-    let buttonLogin = document.querySelector('#btnlogin')
+    let buttonLogin = document.querySelector('#btnLogin')
     buttonLogin.onlick = function () {
         alert("login successfully")
     };
